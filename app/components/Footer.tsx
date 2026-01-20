@@ -66,7 +66,7 @@ export const Footer: React.FC = () => {
             {/* Phone */}
             <li className="flex items-center gap-3 hover:text-yellow-400 transition">
               <Phone size={18} className="text-yellow-400" />
-              <a href="tel:+8801571311765">+88 01571 311765</a>
+              <a href="tel:+8801711392562">+88 01711 392562</a>
             </li>
 
             {/* Email */}
@@ -81,7 +81,7 @@ export const Footer: React.FC = () => {
             <li className="flex items-center gap-3 hover:text-yellow-400 transition">
               <MessageCircle size={18} className="text-yellow-400" />
               <a
-                href="https://wa.me/8801571311765"
+                href="https://wa.me/8801711392562"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -91,31 +91,7 @@ export const Footer: React.FC = () => {
           </ul>
         </div>
       </div>
-<section className="relative w-full bg-black text-white py-20">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="border border-gray-700 rounded-xl p-10 md:p-14 flex flex-col md:flex-row items-center gap-10">
-          {/* Optional Image Placeholder */}
-          <div className="w-36 h-36 rounded-full border border-yellow-500 flex items-center justify-center text-yellow-400 text-4xl font-bold">
-            AU
-          </div>
 
-          {/* Text Content */}
-          <div className="text-center md:text-left">
-            <h3 className="text-3xl md:text-4xl font-extrabold mb-2 bg-linear-to-r from-yellow-400 via-amber-300 to-white bg-clip-text text-transparent">
-              Md. Abdus Salam Uzzal
-            </h3>
-
-            <p className="text-yellow-400 font-semibold uppercase tracking-widest mb-1">
-              Chairman
-            </p>
-
-            <p className="text-gray-300 tracking-wide">
-              PRIME Business & Construction Ltd
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
       {/* Bottom Bar */}
       <div className="border-t border-gray-800 py-6 text-center text-gray-400 text-xs">
         © {new Date().getFullYear()} PRIME Business & Construction. All rights
