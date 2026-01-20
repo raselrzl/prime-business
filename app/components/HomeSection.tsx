@@ -18,7 +18,7 @@ export const HomeSection: React.FC = () => {
       <div className="absolute inset-0 bg-linear-to-b from-black/70 to-black/30" />
 
       {/* Content */}
-      <div className="relative z-10 flex items-start h-full max-w-7xl mx-auto px-6 md:px-12 py-20">
+      <div className="relative z-10 flex items-start h-full max-w-7xl mx-auto px-6 md:px-12 py-10">
         <div className="max-w-xl text-left">
           {/* Small label */}
           <h1 className="inline-block text-sm md:text-lg font-bold text-white leading-tight mb-4 bg-amber-100/20 border border-yellow-500 py-1 px-3 rounded-full shadow-lg">
