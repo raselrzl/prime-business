@@ -22,14 +22,17 @@ const Navbar: React.FC = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="max-w-7xl text-white py-2 pr-6 bg-black flex items-center justify-between fixed top-0 w-full z-50">
-        <div className="relative w-50 h-12 md:h-16 group">
+      <nav className="max-w-7xl text-white pr-6 bg-black flex items-center justify-between fixed top-0 w-full z-50">
+        <div className="relative w-50 h-12 md:h-16 mt-2 ml-2 group">
           {/* Logo image */}
           <img
-            src="/PRIME.png"
+            src="/prime2.png"
             alt="PRIME Logo"
             className="absolute inset-0 w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
           />
+          <p className="text-[8px] text-right mr-4 italic tracking-widest text-gray-300 uppercase mt-8 md:mt-12">
+            Business & Construction
+          </p>
         </div>
 
         {/* Logo */}
