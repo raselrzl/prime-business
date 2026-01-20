@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
         <div className="relative w-50 h-12 md:h-16 mt-2 ml-2 group">
           {/* Logo image */}
           <img
-            src="/prime2.png"
+            src="/prime3.png"
             alt="PRIME Logo"
             className="absolute inset-0 w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
           />
