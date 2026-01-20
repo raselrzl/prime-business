@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
               alt="PRIME Logo"
               className="absolute inset-0 w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
             />
-            <p className="text-[8px] md:text-xs italic tracking-widest pr-3 text-gray-300 uppercase mt-8 md:mt-12 text-right">
+            <p className="text-[8px] italic tracking-widest pr-3 text-gray-300 uppercase mt-8 md:mt-12 text-right">
               Business & Construction
             </p>
           </div>
