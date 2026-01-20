@@ -66,7 +66,7 @@ export const Footer: React.FC = () => {
             {/* Phone */}
             <li className="flex items-center gap-3 hover:text-yellow-400 transition">
               <Phone size={18} className="text-yellow-400" />
-              <a href="tel:+8801711392562">+88 01711 392562</a>
+              <a href="tel:+8801571311765">+88 01571 311765</a>
             </li>
 
             {/* Email */}
@@ -81,7 +81,7 @@ export const Footer: React.FC = () => {
             <li className="flex items-center gap-3 hover:text-yellow-400 transition">
               <MessageCircle size={18} className="text-yellow-400" />
               <a
-                href="https://wa.me/8801711392562"
+                href="https://wa.me/8801571311765"
                 target="_blank"
                 rel="noopener noreferrer"
               >
