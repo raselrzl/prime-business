@@ -71,9 +71,9 @@ const Navbar: React.FC = () => {
           aria-label="Open menu"
           className="md:hidden flex flex-col gap-1.5"
         >
-          <span className="w-8 h-1 bg-white" />
-          <span className="w-8 h-1 bg-white" />
-          <span className="w-8 h-1 bg-white" />
+          <span className="w-7 h-0.75 bg-white" />
+          <span className="w-7 h-0.75 bg-white" />
+          <span className="w-7 h-0.75 bg-white" />
         </button>
       </nav>
 
