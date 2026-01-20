@@ -11,13 +11,27 @@ import {
   Mail,
   MessageCircle,
 } from "lucide-react";
+import { motion } from "framer-motion";
 
 export const Footer: React.FC = () => {
+  const fadeUp = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
-    <footer className="bg-black text-white border-t border-gray-800">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
+    <motion.footer
+      className="bg-black text-white border-t border-gray-800"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.3 }}
+      transition={{ staggerChildren: 0.2 }}
+    >
+      <motion.div
+        className="max-w-7xl mx-auto px-6 md:px-12 py-16 grid grid-cols-1 md:grid-cols-3 gap-12"
+      >
         {/* Brand */}
-        <div>
+        <motion.div variants={fadeUp}>
           <h3 className="text-2xl font-extrabold tracking-wide">PRIME</h3>
           <p className="text-sm tracking-widest text-gray-400 uppercase mt-1">
             Business & Construction
@@ -26,10 +40,10 @@ export const Footer: React.FC = () => {
             Leading provider of construction management and business consulting
             services. We build the future with precision and strategy.
           </p>
-        </div>
+        </motion.div>
 
         {/* Services */}
-        <div>
+        <motion.div variants={fadeUp}>
           <h4 className="text-lg font-semibold mb-4">Services</h4>
           <ul className="space-y-3 text-gray-300">
             <li className="flex items-center gap-3">
@@ -49,10 +63,10 @@ export const Footer: React.FC = () => {
               Risk Assessment
             </li>
           </ul>
-        </div>
+        </motion.div>
 
         {/* Contact */}
-        <div>
+        <motion.div variants={fadeUp}>
           <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
           <ul className="space-y-4 text-gray-300">
             <li className="flex items-start gap-3">
@@ -89,14 +103,17 @@ export const Footer: React.FC = () => {
               </a>
             </li>
           </ul>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-800 py-6 text-center text-gray-400 text-xs">
+      <motion.div
+        className="border-t border-gray-800 py-6 text-center text-gray-400 text-xs"
+        variants={fadeUp}
+      >
         © {new Date().getFullYear()} PRIME Business & Construction. All rights
         reserved.
-      </div>
-    </footer>
+      </motion.div>
+    </motion.footer>
   );
 };
