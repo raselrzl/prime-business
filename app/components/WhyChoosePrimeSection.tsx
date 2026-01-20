@@ -4,7 +4,7 @@ import React from "react";
 
 export const WhyChoosePrimeSection: React.FC = () => {
   return (
-    <section className="relative w-full bg-black text-white py-24">
+    <section id="experience" className="relative w-full bg-black text-white py-24">
       <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
         {/* Left Image */}
         <div className="relative h-120 md:h-155 rounded-xl overflow-hidden border border-gray-700">

@@ -1,0 +1,126 @@
+"use client";
+
+import React from "react";
+import {
+  Building2,
+  Briefcase,
+  Factory,
+  ShieldCheck,
+  MapPin,
+  Phone,
+  Mail,
+  MessageCircle,
+} from "lucide-react";
+
+export const Footer: React.FC = () => {
+  return (
+    <footer className="bg-black text-white border-t border-gray-800">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
+        {/* Brand */}
+        <div>
+          <h3 className="text-2xl font-extrabold tracking-wide">PRIME</h3>
+          <p className="text-sm tracking-widest text-gray-400 uppercase mt-1">
+            Business & Construction
+          </p>
+          <p className="text-gray-300 mt-4 leading-relaxed max-w-sm">
+            Leading provider of construction management and business consulting
+            services. We build the future with precision and strategy.
+          </p>
+        </div>
+
+        {/* Services */}
+        <div>
+          <h4 className="text-lg font-semibold mb-4">Services</h4>
+          <ul className="space-y-3 text-gray-300">
+            <li className="flex items-center gap-3">
+              <Building2 size={18} className="text-yellow-400" />
+              Construction Management
+            </li>
+            <li className="flex items-center gap-3">
+              <Briefcase size={18} className="text-yellow-400" />
+              Business Consulting
+            </li>
+            <li className="flex items-center gap-3">
+              <Factory size={18} className="text-yellow-400" />
+              Infrastructure
+            </li>
+            <li className="flex items-center gap-3">
+              <ShieldCheck size={18} className="text-yellow-400" />
+              Risk Assessment
+            </li>
+          </ul>
+        </div>
+
+        {/* Contact */}
+        <div>
+          <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
+          <ul className="space-y-4 text-gray-300">
+            <li className="flex items-start gap-3">
+              <MapPin size={20} className="text-yellow-400 mt-1" />
+              <span>
+                28/A, (3rd Floor), V.I.P Road, <br />
+                Nayapaltan, Dhaka-100
+              </span>
+            </li>
+
+            {/* Phone */}
+            <li className="flex items-center gap-3 hover:text-yellow-400 transition">
+              <Phone size={18} className="text-yellow-400" />
+              <a href="tel:+8801711392562">+88 01711 392562</a>
+            </li>
+
+            {/* Email */}
+            <li className="flex items-center gap-3 hover:text-yellow-400 transition">
+              <Mail size={18} className="text-yellow-400" />
+              <a href="mailto:abdussalamuzzal45@gmail.com">
+                abdussalamuzzal45@gmail.com
+              </a>
+            </li>
+
+            {/* WhatsApp */}
+            <li className="flex items-center gap-3 hover:text-yellow-400 transition">
+              <MessageCircle size={18} className="text-yellow-400" />
+              <a
+                href="https://wa.me/8801711392562"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WhatsApp Chat
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+<section className="relative w-full bg-black text-white py-20">
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <div className="border border-gray-700 rounded-xl p-10 md:p-14 flex flex-col md:flex-row items-center gap-10">
+          {/* Optional Image Placeholder */}
+          <div className="w-36 h-36 rounded-full border border-yellow-500 flex items-center justify-center text-yellow-400 text-4xl font-bold">
+            AU
+          </div>
+
+          {/* Text Content */}
+          <div className="text-center md:text-left">
+            <h3 className="text-3xl md:text-4xl font-extrabold mb-2 bg-linear-to-r from-yellow-400 via-amber-300 to-white bg-clip-text text-transparent">
+              Md. Abdus Salam Uzzal
+            </h3>
+
+            <p className="text-yellow-400 font-semibold uppercase tracking-widest mb-1">
+              Chairman
+            </p>
+
+            <p className="text-gray-300 tracking-wide">
+              PRIME Business & Construction Ltd
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+      {/* Bottom Bar */}
+      <div className="border-t border-gray-800 py-6 text-center text-gray-400 text-xs">
+        © {new Date().getFullYear()} PRIME Business & Construction. All rights
+        reserved.
+      </div>
+    </footer>
+  );
+};

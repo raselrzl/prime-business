@@ -56,7 +56,7 @@ export const ExpertiseSection: React.FC = () => {
   };
 
   return (
-    <section className="relative w-full bg-black text-white py-20">
+    <section id="service" className="relative w-full bg-black text-white py-20">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
