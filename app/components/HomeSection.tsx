@@ -50,7 +50,7 @@ export const HomeSection: React.FC = () => {
 
           {/* Main heading with gradient */}
           <motion.h2
-            className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-8 leading-snug md:leading-tight bg-linear-to-r from-yellow-400 via-amber-300 to-white bg-clip-text text-transparent"
+            className="text-3xl xl:text-4xl font-extrabold mb-8 leading-snug md:leading-tight bg-linear-to-r from-yellow-400 via-amber-300 to-white bg-clip-text text-transparent"
             variants={fadeUp}
           >
             Building Excellence in Construction & Business Solutions
